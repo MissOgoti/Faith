@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <p id="description">Please fill out the survey form below:</p>
+        <form id="survey-form" action="#" method="post">
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+            </div>
+            <div>
+                <label for="dropdown">Select Option:</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+            <div>
+                <label>Choose One:</label><br>
+                <input type="radio" id="option1" name="chooseOne" value="option1">
+                <label for="option1">Option 1</label><br>
+                <input type="radio" id="option2" name="chooseOne" value="option2">
+                <label for="option2">Option 2</label>
+            </div>
+            <div>
+                <label>Choose Several:</label><br>
+                <input type="checkbox" id="checkbox1" name="chooseSeveral" value="option1">
+                <label for="checkbox1">Option 1</label><br>
+                <input type="checkbox" id="checkbox2" name="chooseSeveral" value="option2">
+                <label for="checkbox2">Option 2</label>
+            </div>
+            <div>
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

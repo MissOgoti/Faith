@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+      <h1>Faith2 SurveyForm</h1>
+      <p>Kindly fill in this form with the required information.</p>
+    <form action="URL" method="post">
+      <fieldset>
+      <label for="name">Name <input id="name" type="text" placeholder="enter your name"required></label>
+  <label for="email">Email <input id="email" type="text"  placeholder="enter your email" required></label>
+   <label for="number">Phone Number <input id="number" type="text"  placeholder="enter your number"required></label>
+<label for="institution">Which university is the best in kenya?
+      <select id="institution" name="institution">
+            <option value="">(select one)</option>
+            <option value="1">Multimedia University of Kenya</option>
+            <option value="2">Kenyatta University</option>
+            <option value="3">The Nairobi University</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </fieldset>
+         <fieldset>
+        <legend>University type (required)</legend>
+        <label for="public-university"><input id="public-university" type="radio" name="public-university" class="inline" checked /> Public</label>
+        <label for="private-university"><input id="private-university" type="radio" name="private-university" class="inline" /> Private</label>
+      </fieldset>
+      <fieldset>
+        <element>Courses offered at the following universities:</element>
+         <label for="nursing">
+        <input class="inline" id="nursing" type="checkbox" name="nursing" required> Nursing</label>
+        <label for="medicine">
+        <input class="inline" id="medicine" type="checkbox" name="medicine" required> Medicine</label>
+        <label for="education">
+        <input class="inline" id="education" type="checkbox" name="education" required> Education</label>
+        <label for="law">
+        <input class="inline" id="law" type="checkbox" name="law" required> Law</label>
+</fieldset>
+         <label for="institution">Which university do you prefer and why?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I would like to join..."></textarea>
+        </label>
+      </fieldset>
+    <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
